@@ -1,0 +1,163 @@
+@media screen and (min-width:980px) {
+	div.wrap{
+		div.header{
+			div.nav{
+				width:100%;
+				div.menu{display:none;}
+				div.select{display:none;}
+			}
+		}
+		div.main{
+			div.bot{
+				div.box{
+					ul{
+						.animate(run);.animation(run,20s,linear,infinite);
+					}
+				}
+			}
+		}
+	}
+}
+// 定义底部轮播图动画
+.animation(@animation-name,@animation-duration,@animation-timing-function,@animation-iteration-count){
+  -webkit-animation: @arguments;
+  -moz-animation: @arguments;
+  -ms-animation: @arguments;
+  -o-animation:  @arguments;
+  animation: @arguments;
+}
+.animate(@run){
+	@-webkit-keyframes @run{
+		0%{margin-left:0;}
+		50%{margin-left:-100%;}
+		100%{margin-left:0;}
+	}
+	@-moz-keyframes @run{
+		0%{margin-left:0;}
+		50%{margin-left:-100%;}
+		100%{margin-left:0;}
+	}
+	@-ms-keyframes @run{
+		0%{margin-left:0;}
+		50%{margin-left:-100%;}
+		100%{margin-left:0;}
+	}
+	@-o-keyframes @run{
+		0%{margin-left:0;}
+		50%{margin-left:-100%;}
+		100%{margin-left:0;}
+	}
+}
+@media screen and (min-width:640px) and (max-width:979px) {
+	div.wrap{
+		div.header{
+			div.nav{
+				div.center{
+					height:auto;padding:0 10px;font-size:14px;
+					ul{width:100%;
+						li{
+							padding:0px;
+						}
+					}
+				}
+				div.menu{display:none;}
+				div.select{display:none;}
+			}
+		}
+		div.banner{
+			div.img{
+				@w:100%;width:@w;height:480px;
+				img{
+					width:@w;height:100%;
+				}
+			}		
+		}
+		div.main{
+			width:90%;margin:0 auto;
+			div.top{
+				ul{
+					li{
+						width:100%;
+					}
+				}
+			}
+			div.middle{
+				ul.out{
+					li{width:100%;
+						p{width:100%;}
+					}
+				}
+			}
+			div.bot{
+				@h:100%;
+				div.box{
+						ul{width:@h;height:@h*0.9;
+							li{
+								width:50%;
+								&:hover img{opacity:0.8;}
+								h5{
+									&:hover{color:#93BA0F;}
+								}
+								p{
+									&:hover{text-decoration:underline #93BA0F;}
+								}
+							}
+						}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width:680px){
+	div.wrap{
+		box-sizing:border-box;
+		div.header{
+			div.nav{
+				width:100%;
+				div.center{
+					div.right{
+						display:none;
+					}
+				}
+				div.menu{display:block;}
+				div.select{display:none;}
+			}
+		}
+		div.banner{
+			div.img{
+				@w:100%;width:@w;height:300px;
+				img{
+					width:@w;height:100%;
+				}
+			}		
+		}
+		div.main{
+			width:90%;margin:0 auto;
+			div.top{
+				ul{
+					li{
+						width:100%;
+					}
+				}
+			}
+			div.middle{
+					ul.out{
+						li{width:100%;
+							p{width:100%;}
+						}
+					}
+			}
+			div.bot{
+				@h:100%;
+				div.box{
+						ul{width:@h;height:@h*0.9;
+							li{
+								width:100%;
+							}
+						}
+				}
+			}
+		}
+		div.footer{display:none;}
+	}
+}

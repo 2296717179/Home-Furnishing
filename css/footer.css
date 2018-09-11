@@ -1,0 +1,49 @@
+div.wrap div.footer {
+  height: 100px;
+  border-top: 1px solid #e5e5e5;
+  background: #9DBF26;
+  margin-top: 40px;
+}
+div.wrap div.footer div.font {
+  width: 40%;
+  height: 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+div.wrap div.footer div.font img {
+  width: 30px;
+  height: 30px;
+  margin: 35px 20px;
+  opacity: 0.3;
+}
+div.wrap div.footer div.font img:hover {
+  opacity: 1;
+}
+div.wrap div.footer2 {
+  background: #000;
+  padding: 30px 0px;
+  color: #aaa;
+  font-size: 12px;
+}
+div.wrap div.footer2 div.center {
+  width: 80%;
+  margin: 0 auto;
+}
+div.wrap div.footer2 div.center div.left {
+  float: left;
+}
+div.wrap div.footer2 div.center div.left a {
+  display: inline-block;
+  color: #aaa;
+}
+div.wrap div.footer2 div.center div.left a:hover {
+  color: white;
+}
+div.wrap div.footer2 div.center div.right {
+  float: right;
+}
+div.wrap div.footer2 div.center::after {
+  content: "";
+  display: block;
+  clear: both;
+}

@@ -1,0 +1,100 @@
+div.wrap{
+	div.main{
+		h4{width:200px;font-size:30px;font-weight:normal;color:#6e6e6e;margin:30px 0px;
+			&:hover{color:#93BA0F;}
+		}
+		div.top{
+			@w:100%;margin:0 auto;
+			ul{
+				width:@w;margin:0 auto;
+				li{
+					width:@w/3;float:left;padding:10px;
+					img{
+						width:100%;
+						&:hover{
+							opacity:.8;
+						}
+					}
+					div.text{
+						font:14px 微软雅黑;
+						color:#606577;	
+						strong{
+							display:block;margin:10px 0px;font-weight:700;
+							&:hover{
+								color:#93BA0F;
+							}
+						}
+						p{margin-bottom:10px;}
+						a{color:#606577;}
+					}
+				}
+				&::after{
+					content:'';
+					display:block;
+					clear:both;
+				}
+			}
+		}
+		div.middle{
+			ul.out{
+				@w:100%;
+				width:@w;
+				li{
+					width:@w/3;float:left;padding:10px;
+					a{color:#9C9C9C;font-size:15px;
+						&:hover{
+							border-bottom:1px solid #f11d25;color:#f11d25;
+						}
+					}
+					p{width:100%;line-height:1.42857143;color:#6E6E6E;font-size:14px;margin:10px 0px;}
+					 div.letter{padding-left:30px;
+					 	p{width:80%;font-style:italic;font-family: Georgia;font-size:18px;color: #999;}
+					 	span{display:block;font-style:italic;font-family: Georgia;font-size:80%;color:#777;padding-top:3px;}
+					 }  
+					 div.list{
+					 	ul{
+					 		li{width:100%; margin: 0;padding: 4px 0 5px 30px; border-top: 1px solid #f2f2f2; position: relative;background:url('../img/arrow.png') no-repeat 0 11px;
+					 			a{
+					 				font: 14px/1.2em 'Roboto', sans-serif; color: #878787;display: inline;
+					 				&:hover{
+					 					border-bottom:1px solid #878787;
+					 				}
+					 			}
+					 		}
+					 	}
+					 }
+				}
+				&::after{
+					content:"";
+					display:block;
+					clear:both;
+				}
+			}
+		}
+		div.bot{
+			div.box{overflow:hidden;
+				ul{
+					width:200%;
+					li{
+						width:12.5%;float:left;color:#6e6e6e;padding:10px;
+						img{width:100%;}		
+						h5{
+							font-size: 18px;font-weight:normal;margin:10px 0px;
+						}
+						p{
+							font-size: 14px;line-height: 1.42857143;margin:10px 0px;
+						}
+						a{
+							display:inline-block;padding:10px 40px;color:white;background:#1D70F1;border-radius:3px;font-weight: bold;line-height: 1.42857143;text-align: center;white-space: nowrap;vertical-align: middle; cursor: pointer;
+						}
+					}
+					&::after{
+						content:'';
+						display:block;
+						clear:both;
+					}
+				}
+			}
+		}
+	}
+}

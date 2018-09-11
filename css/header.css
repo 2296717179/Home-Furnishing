@@ -1,0 +1,140 @@
+div.wrap {
+  box-sizing: border-box;
+}
+div.wrap div.header {
+  padding-top: 25px;
+  min-height: 100px;
+}
+div.wrap div.header div.nav {
+  width: 100%;
+}
+div.wrap div.header div.nav div.center {
+  height: 62px;
+  padding: 0px 70px;
+  margin: 0 auto;
+  line-height: 62px;
+}
+div.wrap div.header div.nav div.center div.left {
+  width: 20%;
+  float: left;
+  display: table-cell;
+}
+div.wrap div.header div.nav div.center div.left img {
+  width: 176px;
+  height: 62px;
+  vertical-align: middle;
+}
+div.wrap div.header div.nav div.center div.right {
+  float: right;
+  height: auto;
+  padding-top: 19px;
+  font: 16px 微软雅黑;
+}
+div.wrap div.header div.nav div.center div.right ul li {
+  height: 44px;
+  float: left;
+  text-align: center;
+}
+div.wrap div.header div.nav div.center div.right ul li:nth-child(1) a {
+  color: #93BA0F;
+}
+div.wrap div.header div.nav div.center div.right ul li a {
+  display: block;
+  line-height: 20px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #515151;
+}
+div.wrap div.header div.nav div.center div.right ul li a:hover {
+  background: #93BA0F;
+  color: white;
+  opacity: .5;
+}
+div.wrap div.header div.nav div.center div.right ul li a b {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px solid;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+div.wrap div.header div.nav div.center div.right ul li div.bot {
+  position: relative;
+  width: 115%;
+  display: none;
+}
+div.wrap div.header div.nav div.center div.right ul li div.bot ul {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  font-size: 0.8rem;
+  background: #ccc;
+}
+div.wrap div.header div.nav div.center div.right ul li div.bot ul li {
+  float: none;
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
+}
+div.wrap div.header div.nav div.center div.right ul li div.bot ul li a {
+  display: block;
+  width: 100%;
+  height: 32px;
+  padding: 0px;
+}
+div.wrap div.header div.nav div.center div.right ul li div.bot ul li a:hover {
+  color: #93BA0F;
+  background: transparent;
+}
+div.wrap div.header div.nav div.center div.right ul li div.bot ul li a:nth-child(1) {
+  padding: 5px 0px;
+}
+div.wrap div.header div.nav div.center div.right ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+div.wrap div.header div.nav div.center::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+div.wrap div.header div.nav div.menu {
+  width: 44px;
+  height: 34px;
+  line-height: 34px;
+  background: #9cbf23;
+  padding: 5px 10px;
+  position: absolute;
+  right: 21px;
+  top: 46px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+div.wrap div.header div.nav div.menu span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  margin: 4px auto;
+  background: white;
+}
+div.wrap div.header div.nav div.select {
+  text-align: right;
+  font-size: 13px;
+}
+div.wrap div.header div.nav div.select a {
+  display: block;
+  width: 100%;
+  color: #515151;
+  padding: 12px 21px;
+}
+div.wrap div.header div.nav div.select a:hover {
+  color: #93BA0F;
+}
+div.wrap::before {
+  content: "";
+  display: block;
+  border-top: 4px solid #9CBF23;
+}
